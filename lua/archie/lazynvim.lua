@@ -12,8 +12,24 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "folke/which-key.nvim",
-  "akinsho/bufferline.nvim",
+  -- "akinsho/bufferline.nvim",
   "nvim-lualine/lualine.nvim",
   "Mofiqul/vscode.nvim",
+
+  "windwp/nvim-autopairs",
+
+  -- Cmp about
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "hrsh7th/cmp-cmdline",
+
+  -- telescope about
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = {"nvim-lua/plenary.nvim"}
+  },
+
+  -- tree-sitter about
+  "nvim-treesitter/nvim-treesitter",
 })

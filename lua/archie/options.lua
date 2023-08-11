@@ -23,3 +23,13 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.pumheight = 10
 vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
+
+-- Set leader key
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
+
+-- Set keymap
+local opts = {noremap = true, silent = true}
+vim.keymap.set("n", "<leader>w", ":w<CR>", opts)
+vim.keymap.set("n", "<leader>q", ":q<CR>", opts)
+vim.keymap.set("i", "jk", "<ESC>", opts)
