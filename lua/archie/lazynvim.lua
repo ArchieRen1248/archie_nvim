@@ -23,6 +23,7 @@ require("lazy").setup({
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
+  "hrsh7th/cmp-nvim-lsp",
 
   -- telescope about
   {
@@ -32,4 +33,13 @@ require("lazy").setup({
 
   -- tree-sitter about
   "nvim-treesitter/nvim-treesitter",
+
+  -- lsp
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
+
+  -- nvim-tree about
+  "nvim-tree/nvim-tree.lua",
+  "nvim-tree/nvim-web-devicons",
 })
