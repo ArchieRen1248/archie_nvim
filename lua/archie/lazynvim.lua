@@ -42,4 +42,7 @@ require("lazy").setup({
   -- nvim-tree about
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
+
+  -- Comment
+  "numToStr/Comment.nvim",
 })

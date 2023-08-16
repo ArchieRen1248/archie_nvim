@@ -9,3 +9,4 @@ Contains plugins:
 - nvimtree
 - telescope
 - treesitter
+- Comment
