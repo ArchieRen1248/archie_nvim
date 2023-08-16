@@ -23,6 +23,7 @@ vim.opt.pumheight = 10
 vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
 vim.opt.cursorline = true
+vim.opt.signcolumn = 'yes'
 
 -- Set leader key
 vim.g.mapleader = ","
@@ -32,6 +33,7 @@ vim.g.maplocalleader = ","
 -- Set keymap
 ------------------------------
 local opts = {noremap = true, silent = true}
+local term_opts = {silent = true}
 vim.keymap.set("n", "<leader>w", ":w<CR>", opts)
 -- vim.keymap.set("n", "<leader>q", ":q<CR>", opts) -- Avoid quit quickly by hand
 vim.keymap.set("i", "jk", "<ESC>", opts)
@@ -44,7 +46,21 @@ vim.keymap.set('n', 'K', "<C-w>k", opts)
 vim.keymap.set('n', '<leader>c', "<C-w>c", opts)
 vim.keymap.set('n', '<leader>o', "<C-w>o", opts)
 
+-- Visual indent control
+vim.keymap.set('v', '<', '<gv^', opts)
+vim.keymap.set('v', '>', '>gv^', opts)
+
+-- Delete without copying
+vim.keymap.set('n', 'd', '"_d')
+vim.keymap.set('n', 'x', '"_x')
+vim.keymap.set('n', 'c', '"_c')
+vim.keymap.set('v', 'd', '"_d')
+vim.keymap.set('v', 'x', '"_x')
+vim.keymap.set('v', 'c', '"_c')
+
+------------------------------
 -- Neovide about
+------------------------------
 if vim.g.neovide then
   -- vim.opt.guifont = "FiraCode Nerd Font:h24"
   vim.opt.linespace = -1
