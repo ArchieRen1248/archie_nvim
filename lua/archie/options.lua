@@ -51,12 +51,13 @@ vim.keymap.set('v', '<', '<gv^', opts)
 vim.keymap.set('v', '>', '>gv^', opts)
 
 -- Delete without copying
-vim.keymap.set('n', 'd', '"_d')
-vim.keymap.set('n', 'x', '"_x')
-vim.keymap.set('n', 'c', '"_c')
-vim.keymap.set('v', 'd', '"_d')
-vim.keymap.set('v', 'x', '"_x')
-vim.keymap.set('v', 'c', '"_c')
+vim.keymap.set('n', '<leader>d', 'dd', opts)
+vim.keymap.set('n', 'd', '"_d', opts)
+vim.keymap.set('n', 'x', '"_x', opts)
+vim.keymap.set('n', 'c', '"_c', opts)
+vim.keymap.set('v', 'd', '"_d', opts)
+vim.keymap.set('v', 'x', '"_x', opts)
+vim.keymap.set('v', 'c', '"_c', opts)
 
 ------------------------------
 -- Neovide about
