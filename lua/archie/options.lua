@@ -23,7 +23,7 @@ vim.opt.pumheight = 8
 vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
 vim.opt.cursorline = true
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = 'no'
 
 -- Set leader key
 vim.g.mapleader = ","
@@ -34,9 +34,11 @@ vim.g.maplocalleader = ","
 ------------------------------
 local opts = {noremap = true, silent = true}
 local term_opts = {silent = true}
+
+vim.keymap.set("n", "<leader>k", "i<CR><ESC>")
 vim.keymap.set("n", "<leader>w", ":w<CR>", opts)
--- vim.keymap.set("n", "<leader>q", ":q<CR>", opts) -- Avoid quit quickly by hand
 vim.keymap.set("i", "jk", "<ESC>", opts)
+-- vim.keymap.set("n", "<leader>q", ":q<CR>", opts) -- Avoid quit quickly by hand
 
 -- Window control
 vim.keymap.set('n', 'H', "<C-w>h", opts)
