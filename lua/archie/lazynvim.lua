@@ -11,7 +11,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
+local status, lazy = pcall(require, "lazy")
+if not status then
+  print("Lazy cannot be loaded!")
+  return
+end
+
+lazy.setup({
   -- "akinsho/bufferline.nvim",
   "nvim-lualine/lualine.nvim",
   "Mofiqul/vscode.nvim",
@@ -45,4 +51,8 @@ require("lazy").setup({
 
   -- Comment
   "numToStr/Comment.nvim",
+  -- "tpope/vim-commentary",
+
+  -- Toggleterm
+  "akinsho/toggleterm.nvim",
 })
