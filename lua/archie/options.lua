@@ -60,15 +60,3 @@ vim.keymap.set('n', 'c', '"_c', opts)
 vim.keymap.set('v', 'd', '"_d', opts)
 vim.keymap.set('v', 'x', '"_x', opts)
 vim.keymap.set('v', 'c', '"_c', opts)
-
-------------------------------
--- Neovide about
-------------------------------
-if vim.g.neovide then
-  -- vim.opt.guifont = "FiraCode Nerd Font:h24"
-  vim.opt.linespace = -1
-  vim.g.neovide_scale_factor = 1.65
-  vim.g.neovide_cursor_animation_length = 0
-  vim.g.neovide_cursor_trail_size = 0
-  vim.g.neovide_remember_window_size = true
-end
