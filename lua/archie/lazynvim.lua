@@ -55,4 +55,7 @@ lazy.setup({
 
   -- Toggleterm
   "akinsho/toggleterm.nvim",
+
+  -- gitsigns
+  "lewis6991/gitsigns.nvim"
 })
