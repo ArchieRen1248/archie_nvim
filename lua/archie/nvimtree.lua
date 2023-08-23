@@ -8,6 +8,11 @@ if not status then
   print("Nvim-tree cannot be loaded!")
   return
 end
-nvimtree.setup()
+nvimtree.setup({
+  view = {
+    width = 20,
+  }
+})
 
-vim.keymap.set('n', '<leader>b', ":NvimTreeOpen<CR>", {})
+local opts = {noremap = true, silent = true}
+vim.keymap.set('n', '<leader>b', ":NvimTreeOpen<CR>", opts)
