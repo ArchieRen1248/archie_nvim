@@ -1,6 +1,6 @@
 -- UI about
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Search about
 vim.opt.hlsearch = true
