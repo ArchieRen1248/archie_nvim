@@ -18,10 +18,9 @@ if not status then
 end
 
 lazy.setup({
-  -- "akinsho/bufferline.nvim",
+  -- Appearence
   "nvim-lualine/lualine.nvim",
   "Mofiqul/vscode.nvim",
-
   "windwp/nvim-autopairs",
 
   -- Cmp about
@@ -33,21 +32,21 @@ lazy.setup({
   "L3MON4D3/LuaSnip",
   "onsails/lspkind.nvim",
 
-  -- telescope about
+  -- Telescope about
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {"nvim-lua/plenary.nvim"}
   },
 
-  -- tree-sitter about
+  -- Tree-sitter about
   "nvim-treesitter/nvim-treesitter",
 
-  -- lsp
+  -- Lsp
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
 
-  -- nvim-tree about
+  -- Nvim-tree about
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
 
@@ -58,6 +57,6 @@ lazy.setup({
   -- Toggleterm
   "akinsho/toggleterm.nvim",
 
-  -- gitsigns
+  -- Gitsigns
   "lewis6991/gitsigns.nvim"
 })
