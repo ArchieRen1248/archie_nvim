@@ -52,7 +52,7 @@ lazy.setup({
 
   -- Comment
   "numToStr/Comment.nvim",
-  -- "tpope/vim-commentary",
+  -- "tpope/vim-commentary", -- For backup
 
   -- Toggleterm
   "akinsho/toggleterm.nvim",
