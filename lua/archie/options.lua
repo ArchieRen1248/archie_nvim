@@ -41,10 +41,10 @@ vim.keymap.set("i", "jk", "<ESC>", opts)
 -- vim.keymap.set("n", "<leader>q", ":q<CR>", opts) -- Avoid quit quickly by hand
 
 -- Window control
-vim.keymap.set('n', 'H', "<C-w>h", opts)
-vim.keymap.set('n', 'L', "<C-w>l", opts)
-vim.keymap.set('n', 'J', "<C-w>j", opts)
-vim.keymap.set('n', 'K', "<C-w>k", opts)
+vim.keymap.set('n', '<A-h>', "<C-w>h", opts)
+vim.keymap.set('n', '<A-l>', "<C-w>l", opts)
+vim.keymap.set('n', '<A-j>', "<C-w>j", opts)
+vim.keymap.set('n', '<A-k>', "<C-w>k", opts)
 vim.keymap.set('n', '<leader>c', "<C-w>c", opts)
 vim.keymap.set('n', '<leader>o', "<C-w>o", opts)
 
