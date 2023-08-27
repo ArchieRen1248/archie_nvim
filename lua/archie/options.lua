@@ -45,8 +45,8 @@ vim.keymap.set('n', '<A-h>', "<C-w>h", opts)
 vim.keymap.set('n', '<A-l>', "<C-w>l", opts)
 vim.keymap.set('n', '<A-j>', "<C-w>j", opts)
 vim.keymap.set('n', '<A-k>', "<C-w>k", opts)
-vim.keymap.set('n', '<leader>c', "<C-w>c", opts)
-vim.keymap.set('n', '<leader>o', "<C-w>o", opts)
+vim.keymap.set('n', '<A-c>', "<C-w>c", opts)
+vim.keymap.set('n', '<A-o>', "<C-w>o", opts)
 
 -- Visual indent control
 vim.keymap.set('v', '<', '<gv^', opts)
