@@ -32,4 +32,19 @@ lualine.setup({
 })
 
 -- bufferline about
--- require("bufferline").setup()
+local status, bufferline = pcall(require, "bufferline")
+if not status then
+  print("Bufferline cannot be loaded!")
+  return
+end
+require("bufferline").setup()
+
+local status, indentblankline = pcall(require, "indent_blankline")
+if not status then
+  print("Indent blankline cannot be loaded!")
+  return
+end
+require ("indent_blankline").setup{
+  show_current_context = true,
+  show_current_context_status = true,
+}

@@ -22,6 +22,8 @@ lazy.setup({
   "nvim-lualine/lualine.nvim",
   "Mofiqul/vscode.nvim",
   "windwp/nvim-autopairs",
+  "akinsho/bufferline.nvim",
+  "lukas-reineke/indent-blankline.nvim",
 
   -- Cmp about
   "hrsh7th/nvim-cmp",

@@ -1,12 +1,4 @@
 # Archie's nvim
 
-Archie's personal NeoVim configuration.
+Archie's personal NeoVIM configuration. My mainly philosophy is lightweight and practical.
 
-Contains plugins:
-- lazynvim
-- lualine
-- nvimcmp
-- nvimtree
-- telescope
-- treesitter
-- Comment
