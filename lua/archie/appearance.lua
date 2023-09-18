@@ -1,4 +1,4 @@
--- coloscheme about
+-- coloscheme(vscode) about
 local status, vscode = pcall(require, "vscode")
 if not status then
   print("VSCode colorscheme cannot be loaded!")
@@ -37,14 +37,5 @@ if not status then
   print("Bufferline cannot be loaded!")
   return
 end
-require("bufferline").setup()
+bufferline.setup()
 
-local status, indentblankline = pcall(require, "indent_blankline")
-if not status then
-  print("Indent blankline cannot be loaded!")
-  return
-end
-require ("indent_blankline").setup{
-  show_current_context = true,
-  show_current_context_status = true,
-}

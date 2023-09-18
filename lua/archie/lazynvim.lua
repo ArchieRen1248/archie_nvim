@@ -19,20 +19,17 @@ end
 
 lazy.setup({
   -- Appearence
-  "nvim-lualine/lualine.nvim",
   "Mofiqul/vscode.nvim",
-  "windwp/nvim-autopairs",
+  "echasnovski/mini.pairs",
+  "echasnovski/mini.comment",
   "akinsho/bufferline.nvim",
-  "lukas-reineke/indent-blankline.nvim",
+  "nvim-lualine/lualine.nvim",
 
   -- Cmp about
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
-  "hrsh7th/cmp-nvim-lsp",
-  "L3MON4D3/LuaSnip",
-  "onsails/lspkind.nvim",
 
   -- Telescope about
   {
@@ -40,21 +37,9 @@ lazy.setup({
     dependencies = {"nvim-lua/plenary.nvim"}
   },
 
-  -- Tree-sitter about
-  "nvim-treesitter/nvim-treesitter",
-
-  -- Lsp
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig",
-
   -- Nvim-tree about
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
-
-  -- Comment
-  "numToStr/Comment.nvim",
-  -- "tpope/vim-commentary", -- For backup
 
   -- Toggleterm
   "akinsho/toggleterm.nvim",
