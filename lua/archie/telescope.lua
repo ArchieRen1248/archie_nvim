@@ -1,6 +1,6 @@
 local status, telescopebuiltin = pcall(require, 'telescope.builtin')
 if not status then
-  print("Telescope-builtin cannot be loaded!")
+  print("telescope-builtin cannot be loaded!")
   return
 end
 

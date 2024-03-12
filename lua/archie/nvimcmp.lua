@@ -1,6 +1,6 @@
 local status, cmp = pcall(require, 'cmp')
 if not status then
-  print("Nvim-cmp cannot be loaded!")
+  print("nvim-cmp cannot be loaded!")
   return
 end
 
@@ -18,6 +18,7 @@ cmp.setup {
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
   sources = cmp.config.sources({
+    { name = "nvim_lsp" },
     { name = "buffer" },
     { name = "path" },
   }),

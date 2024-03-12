@@ -1,7 +1,7 @@
 -- import toggleterm plugin safely
 local status, toggleterm = pcall(require, "toggleterm")
 if not status then
-    print("Toggleterm cannot be loaded")
+    print("toggleterm cannot be loaded")
     return
 end
 

@@ -1,6 +1,6 @@
 local status, mason = pcall(require, "mason")
 if not status then
-  print("Mason cannot be loaded!")
+  print("mason cannot be loaded!")
   return
 end
 mason.setup()
@@ -8,7 +8,7 @@ mason.setup()
 
 local status, masonlspconfig = pcall(require, "mason-lspconfig")
 if not status then
-  print("Mason-lspconfig cannot be loaded!")
+  print("mason-lspconfig cannot be loaded!")
   return
 end
 masonlspconfig.setup()

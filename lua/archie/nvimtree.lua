@@ -5,7 +5,7 @@ vim.opt.termguicolors = true
 
 local status, nvimtree = pcall(require, "nvim-tree")
 if not status then
-  print("Nvim-tree cannot be loaded!")
+  print("nvim-tree cannot be loaded!")
   return
 end
 nvimtree.setup({
@@ -15,4 +15,4 @@ nvimtree.setup({
 })
 
 local opts = {noremap = true, silent = true}
-vim.keymap.set('n', '<leader>b', ":NvimTreeOpen<CR>", opts)
+vim.keymap.set('n', '<C-b>', ":NvimTreeToggle<CR>", opts)

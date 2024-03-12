@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local status, lazy = pcall(require, "lazy")
 if not status then
-  print("Lazy cannot be loaded!")
+  print("lazy cannot be loaded!")
   return
 end
 
@@ -25,7 +25,15 @@ lazy.setup({
   "akinsho/bufferline.nvim",
   "nvim-lualine/lualine.nvim",
 
+  -- Language about
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
+  "nvim-treesitter/nvim-treesitter",
+
   -- Cmp about
+  "neovim/nvim-lspconfig",
+  "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",

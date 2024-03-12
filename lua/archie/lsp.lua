@@ -1,7 +1,7 @@
 -- Setup language servers.
 local status, lspconfig = pcall(require, "lspconfig")
 if not status then
-  print("Lspconfig cannot be loaded!")
+  print("lspconfig cannot be loaded!")
   return
 end
 
