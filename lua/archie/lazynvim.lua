@@ -30,6 +30,7 @@ lazy.setup({
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
   "nvim-treesitter/nvim-treesitter",
+  "stevearc/conform.nvim",
 
   -- Cmp about
   "neovim/nvim-lspconfig",
