@@ -15,4 +15,4 @@ nvimtree.setup({
 })
 
 local opts = {noremap = true, silent = true}
-vim.keymap.set('n', '<C-b>', ":NvimTreeToggle<CR>", opts)
+vim.keymap.set('n', '<leader>b', ":NvimTreeToggle<CR>", opts)
