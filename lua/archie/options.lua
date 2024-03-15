@@ -3,6 +3,7 @@ vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.numberwidth = 2
 vim.opt.mousemodel = extend
+vim.wo.colorcolumn = "80"
 
 -- Search about
 vim.opt.hlsearch = true
