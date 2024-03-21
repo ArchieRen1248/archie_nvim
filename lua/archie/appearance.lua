@@ -25,6 +25,7 @@ lualine.setup({
     section_separators = {left = '', right = ''},
   },
   sections = {
+    lualine_c = {{'aerial'}},
     lualine_x = {{'filetype'}},
     lualine_z = {{archie_location}}
   }

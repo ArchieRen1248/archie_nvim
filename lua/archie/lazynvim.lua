@@ -31,6 +31,15 @@ lazy.setup({
   "neovim/nvim-lspconfig",
   "nvim-treesitter/nvim-treesitter",
   "stevearc/conform.nvim",
+  {
+    'stevearc/aerial.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons"
+    },
+  },
 
   -- Cmp about
   "neovim/nvim-lspconfig",
