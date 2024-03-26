@@ -21,7 +21,6 @@ lazy.setup({
   -- Appearence
   "Mofiqul/vscode.nvim",
   "echasnovski/mini.pairs",
-  "echasnovski/mini.comment",
   "akinsho/bufferline.nvim",
   "nvim-lualine/lualine.nvim",
 
@@ -31,6 +30,7 @@ lazy.setup({
   "neovim/nvim-lspconfig",
   "nvim-treesitter/nvim-treesitter",
   "stevearc/conform.nvim",
+  'numToStr/Comment.nvim',
   {
     'stevearc/aerial.nvim',
     opts = {},
@@ -39,6 +39,7 @@ lazy.setup({
       "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons"
     },
+    lazy = true,
   },
 
   -- Cmp about
