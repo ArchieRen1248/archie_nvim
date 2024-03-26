@@ -1,6 +1,6 @@
-local status, comment = pcall(require, 'mini.comment')
+local status, comment = pcall(require, 'Comment')
 if not status then
-  print("mini.comment cannot be loaded!")
+  print("Comment cannot be loaded!")
   return
 end
 comment.setup()
