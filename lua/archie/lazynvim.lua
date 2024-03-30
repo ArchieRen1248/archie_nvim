@@ -63,6 +63,7 @@ lazy.setup({
   -- Toggleterm
   "akinsho/toggleterm.nvim",
 
-  -- Gitsigns
-  "lewis6991/gitsigns.nvim"
+  -- Git about
+  "lewis6991/gitsigns.nvim",
+  "tanvirtin/vgit.nvim"
 })

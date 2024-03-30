@@ -45,3 +45,11 @@ gitsigns.setup({
 		enable = false,
 	},
 })
+
+local status, vgit = pcall(require, "vgit")
+if not status then
+	print("vgit cannot be loaded!")
+	return
+end
+
+vgit.setup()
