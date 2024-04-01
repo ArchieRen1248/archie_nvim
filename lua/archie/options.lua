@@ -27,3 +27,4 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.signcolumn = 'no'
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
